@@ -1,5 +1,3 @@
-package libraryCatalog;
-
 /**
  * create a small application that mimics a library catalog. // library
  * There are 3 separate Book properties in the LibraryCatalog. // book
@@ -31,14 +29,29 @@ package libraryCatalog;
  * a, si fiecare clasa cu fisierul ei, inclusiv LibraryCatalog
  */
 
+/**
+ * Adrian Bucur: Feedback
+ * Yey, all good.
+ * Pro tip: you can add validations before adding a book (eg: already exists, library is full) // addValidationBefore
+ * and before deleting (don't try to delete a book that is not there).  // beforeDeleting
+ * But only if you find time
+ */
+
 public class Main {
-        public static void main(String[] args) {
+        public static void main (String[] args) {
             LibraryCatalog catalog = new LibraryCatalog();
             catalog.addBooks(new Novel("Baltagul", 488, "Mister"), 0);
             catalog.addBooks(new Novel("Ion", 356, "Romance"), 1);
             catalog.addBooks(new ArtAlbum("Anii `80", 120, "Recycle Quality"), 2);
+
+            catalog.addBooks(new ArtAlbum("Muzica Populara", 110, "Nice Quality"), 3);
+
             catalog.listAllBooks();
+
             catalog.deleteAllBooks(2);
+
+            catalog.deleteAllBooks(5);
+
 
         }
 

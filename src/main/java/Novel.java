@@ -1,5 +1,3 @@
-package libraryCatalog;
-
 /**here we made a subclass for class Books
  * it contains a variable String type for Novels(like mystery, sf, etc.)
  */

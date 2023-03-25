@@ -1,5 +1,3 @@
-package libraryCatalog;
-
 /** Books is a parent class in which we set 2 variables for name and number of pages, common to all children
  * we make a constructor with 2 parameters;
  * we assign this.name to the "variable name" analog with numberOfPages
