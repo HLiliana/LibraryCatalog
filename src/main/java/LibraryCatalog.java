@@ -22,6 +22,7 @@ public class LibraryCatalog {
 
             } else if (deleteThisBook < length) {
                 System.out.println("Book " + books[deleteThisBook].getName() + " has been deleted.");
+                books[deleteThisBook] = null;
             }
 
 

@@ -48,9 +48,12 @@ public class Main {
 
             catalog.listAllBooks();
 
+
             catalog.deleteAllBooks(2);
 
             catalog.deleteAllBooks(5);
+
+            catalog.listAllBooks();
 
 
         }
